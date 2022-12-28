@@ -1,5 +1,6 @@
 import classes from './App.module.css';
 import { useReducer } from 'react';
+import DigitButton from './DigitButton';
 
 export const ACTIONS = {
   ADD_DIGIT : "add-digit",
@@ -10,12 +11,12 @@ export const ACTIONS = {
 }
 
 function reducer (state, {type, payload}) {
-  
+
 }
 
 function App() {
 
-  const [{currentOperant, previousOperand, operation}, dispatch] = useReducer (reducer, {});
+  const [{currentOperand, previousOperand, operation}, dispatch] = useReducer (reducer, {});
 
   return (
     <div className = {classes.calculator}>
@@ -27,20 +28,20 @@ function App() {
       <button className = {classes.spanTwo}>AC</button>
       <button>DEl</button>
       <button>÷</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
+      <DigitButton dispatchHandler={dispatch} digit="1"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="2"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="3"></DigitButton>
       <button>*</button>
-      <button>4</button>
-      <button>5</button>
-      <button>6</button>
+      <DigitButton dispatchHandler={dispatch} digit="4"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="5"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="6"></DigitButton>
       <button>+</button>
-      <button>7</button>
-      <button>8</button>
-      <button>9</button>
+      <DigitButton dispatchHandler={dispatch} digit="7"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="8"></DigitButton>
+      <DigitButton dispatchHandler={dispatch} digit="9"></DigitButton>
       <button>-</button>
       <button>.</button>
-      <button>0</button>
+      <DigitButton dispatchHandler={dispatch} digit="0"></DigitButton>
       <button className = {classes.spanTwo}>=</button>
     </div>
     </div>
