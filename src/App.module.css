@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  /* background: linear-gradient(to right, #00AAFF, #00FF6C); */
+  background: linear-gradient(to right, #e60096, #ff9205);
 }
 
 .calculator {
@@ -52,11 +53,13 @@ body {
   color :  rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   padding-right: .3em;
+  padding-left: 0.3em;
 }
 
 .output .currentOperand {
   color: white;
   font-size: 2.5rem;
   padding-right: 0.3em;
+  padding-left: 0.3em;
 }
 
