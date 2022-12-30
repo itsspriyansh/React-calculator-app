@@ -1,5 +1,5 @@
-#React-calculator-app
+# React-calculator-app
 
-##setup
+## setup
 * `npm install`
 * `npm start`
